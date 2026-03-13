@@ -1,0 +1,76 @@
+================================================
+PYTHON BASIC PROGRAMS – HACKERRANK PRACTICE
+================================================
+
+
+------------------------------------------------
+Program 1 : Printing "Hello, World!" in Python
+------------------------------------------------
+
+This is the simplest Python program used to display a message on the screen.
+
+print("Hello, World!")
+
+
+
+------------------------------------------------
+Program 2 : Conditional Statement (If–Else)
+------------------------------------------------
+
+The program reads an integer and prints different outputs based on the value.
+
+num = int(input())
+
+if num % 2 != 0:
+    print("Weird")
+
+elif num >= 2 and num <= 5:
+    print("Not Weird")
+
+elif num >= 6 and num <= 20:
+    print("Weird")
+
+else:
+    print("Not Weird")
+
+
+
+------------------------------------------------
+Program 3 : Arithmetic Operations
+------------------------------------------------
+
+This program takes two integers and performs basic mathematical operations.
+
+x = int(input())
+y = int(input())
+
+print(x + y)   # Addition
+print(x - y)   # Subtraction
+print(x * y)   # Multiplication
+
+
+
+------------------------------------------------
+Program 4 : Division Operations
+------------------------------------------------
+
+The program demonstrates integer division and floating-point division.
+
+a = int(input())
+b = int(input())
+
+print(a // b)   # Integer division
+print(a / b)    # Floating division
+
+
+
+------------------------------------------------
+Program 5 : Loop Example
+------------------------------------------------
+
+This program prints the square of numbers starting from 0 up to n-1.
+
+n = int(input())
+
+for i in range(n):
+    print(i ** 2)
