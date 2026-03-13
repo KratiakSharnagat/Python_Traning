@@ -1,0 +1,253 @@
+================================================
+PYTHON BASIC PROGRAMS
+================================================
+
+
+1. Program to Check Whether a Number is Even or Odd
+---------------------------------------------------
+
+This program determines whether the number entered by the user is even or odd.
+
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even Number")
+else:
+    print("Odd Number")
+
+
+
+2. Program to Find the Largest Among Three Numbers
+--------------------------------------------------
+
+The user enters three values and the program identifies the greatest number.
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+z = int(input("Enter third number: "))
+
+largest = x
+
+if y > largest:
+    largest = y
+
+if z > largest:
+    largest = z
+
+print("Largest value is:", largest)
+
+
+
+3. Program to Check Positive, Negative or Zero
+----------------------------------------------
+
+This program checks the nature of the number.
+
+num = int(input("Enter any number: "))
+
+if num > 0:
+    print("Positive Number")
+elif num < 0:
+    print("Negative Number")
+else:
+    print("The number is Zero")
+
+
+
+4. Program to Check Divisibility by 3 and 5
+-------------------------------------------
+
+This program checks whether the number is divisible by both 3 and 5.
+
+num = int(input("Enter a number: "))
+
+if num % 3 == 0 and num % 5 == 0:
+    print("Divisible by both 3 and 5")
+else:
+    print("Not divisible by both 3 and 5")
+
+
+
+5. Program to Display Numbers from 1 to N
+-----------------------------------------
+
+The program prints numbers starting from 1 up to N.
+
+n = int(input("Enter the value of N: "))
+
+for i in range(1, n + 1):
+    print(i)
+
+
+
+6. Program to Print Even Numbers from 1 to N
+--------------------------------------------
+
+This program prints all even numbers between 1 and N.
+
+n = int(input("Enter the value of N: "))
+
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        print(i)
+
+
+
+7. Program to Find the Sum of First N Natural Numbers
+-----------------------------------------------------
+
+The program calculates the total sum from 1 to N.
+
+n = int(input("Enter N: "))
+total = 0
+
+for i in range(1, n + 1):
+    total = total + i
+
+print("Total sum:", total)
+
+
+
+8. Program to Calculate Factorial of a Number
+---------------------------------------------
+
+Factorial is obtained by multiplying the number with all integers below it down to 1.
+
+Example
+5! = 5 × 4 × 3 × 2 × 1
+
+n = int(input("Enter a number: "))
+fact = 1
+
+while n > 0:
+    fact = fact * n
+    n = n - 1
+
+print("Factorial value:", fact)
+
+
+
+9. Program to Display Multiplication Table
+------------------------------------------
+
+This program prints the multiplication table of a given number.
+
+num = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
+
+
+
+10. Program to Count Digits in a Number
+---------------------------------------
+
+This program finds the total number of digits present in a number.
+
+num = int(input("Enter a number: "))
+count = 0
+
+while num > 0:
+    count = count + 1
+    num = num // 10
+
+print("Total digits:", count)
+
+
+
+11. Program to Reverse a Number
+-------------------------------
+
+This program reverses the digits of the entered number.
+
+num = int(input("Enter a number: "))
+reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+print("Reversed number:", reverse)
+
+
+
+12. Program to Check Palindrome Number
+--------------------------------------
+
+A palindrome number remains the same when read from left to right or right to left.
+
+Example
+121
+
+num = int(input("Enter a number: "))
+temp = num
+reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+if temp == reverse:
+    print("Palindrome Number")
+else:
+    print("Not a Palindrome Number")
+
+
+
+13. Program to Calculate Sum of Digits
+--------------------------------------
+
+This program adds all digits of the entered number.
+
+Example
+123 → 1 + 2 + 3 = 6
+
+num = int(input("Enter a number: "))
+total = 0
+
+while num > 0:
+    digit = num % 10
+    total = total + digit
+    num = num // 10
+
+print("Sum of digits:", total)
+
+
+
+14. Program to Check Armstrong Number
+-------------------------------------
+
+An Armstrong number is a number whose digits raised to the power of the number of digits equals the number itself.
+
+Example
+153 = 1³ + 5³ + 3³
+
+num = int(input("Enter a number: "))
+temp = num
+total = 0
+digits = len(str(num))
+
+while num > 0:
+    digit = num % 10
+    total = total + digit ** digits
+    num = num // 10
+
+if temp == total:
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
+
+
+
+15. Program to Print Numbers Divisible by 7
+-------------------------------------------
+
+This program prints all numbers between 1 and N that are divisible by 7.
+
+n = int(input("Enter the value of N: "))
+
+for i in range(1, n + 1):
+    if i % 7 == 0:
+        print(i)
