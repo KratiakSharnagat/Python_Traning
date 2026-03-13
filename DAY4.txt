@@ -1,0 +1,186 @@
+================================================
+PYTHON FUNCTIONS, LISTS AND STRINGS
+================================================
+
+
+------------------------------------------------
+1. Function Without Using Parameters
+------------------------------------------------
+
+In this example, the function takes input values inside the function itself
+and prints the result.
+
+def addition():
+    num1 = int(input("Enter first value: "))
+    num2 = int(input("Enter second value: "))
+    result = num1 + num2
+    print("Sum:", result)
+
+if __name__ == "__main__":
+    addition()
+
+
+
+------------------------------------------------
+2. Function Using Parameters
+------------------------------------------------
+
+Here the function receives values from outside through parameters.
+
+def addition(x, y):
+    result = x + y
+    print("Sum:", result)
+
+if __name__ == "__main__":
+    a = int(input("Enter first value: "))
+    b = int(input("Enter second value: "))
+    addition(a, b)
+
+
+
+------------------------------------------------
+3. Function That Returns a Value
+------------------------------------------------
+
+This function calculates the result and returns it to the main program.
+
+def addition(x, y):
+    result = x + y
+    return result
+
+if __name__ == "__main__":
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+
+    ans = addition(a, b)
+    print("Sum:", ans)
+
+
+
+------------------------------------------------
+4. Function Returning Multiple Results
+------------------------------------------------
+
+A function can return more than one value at a time.
+
+def calculation(x, y):
+    add = x + y
+    sub = x - y
+    mul = x * y
+    div = x / y
+    return add, sub, mul, div
+
+if __name__ == "__main__":
+    a = int(input("Enter first value: "))
+    b = int(input("Enter second value: "))
+
+    r1, r2, r3, r4 = calculation(a, b)
+
+    print("Addition :", r1)
+    print("Subtraction :", r2)
+    print("Multiplication :", r3)
+    print("Division :", r4)
+
+
+
+================================================
+LISTS IN PYTHON
+================================================
+
+
+Creating an Empty List
+
+lst = []
+print(type(lst))
+
+lst = list()
+print(type(lst))
+
+
+
+Creating a List With Elements
+
+lst = [11, 22, 33, 44, 55, 66]
+print(lst)
+
+
+
+Accessing List Elements Using Index
+
+for i in range(len(lst)):
+    print(lst[i])
+
+
+
+Accessing Elements Directly
+
+for item in lst:
+    print(item)
+
+
+
+Adding New Elements to List
+
+lst.append(12)
+lst.append(34)
+
+print(lst)
+
+
+
+Examples of List Indexing
+
+print(lst[0])      # First element
+print(lst[-6])     # Access using negative index
+
+
+
+List Slicing Examples
+
+print(lst[2:3])
+print(lst[::2])
+print(lst[::-2])
+print(lst[::-1])   # Reverse order of list
+
+
+
+================================================
+STRINGS IN PYTHON
+================================================
+
+
+s = "Ashish"
+
+print(s[1:3])     # Extract part of string
+print(s[::-1])    # Reverse the string
+
+
+
+Counting Digits in a Number
+
+num = 1234
+print(len(str(num)))
+
+
+
+Checking Data Type
+
+print(type(s))
+
+
+
+------------------------------------------------
+Reverse a String Without Using Built-in Functions
+------------------------------------------------
+
+text = "Kratika"
+rev = ""
+
+for ch in text:
+    rev = kr + rev
+
+print(rev)
+
+
+Output
+akitark
